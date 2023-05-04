@@ -56,7 +56,7 @@ body {
   margin: 0 auto;
 }
 
-/* .page-header {
+.page-header {
   border-bottom: 1px solid #e7e9fc;
 }
 
@@ -67,8 +67,6 @@ body {
   padding-right: 15px;
   padding-left: 15px;
 }
-
-
 
 .page-header-container {
   align-items: center;
@@ -238,7 +236,7 @@ body {
 
 .menu-item-phone {
   margin-left: 40px;
-} */
+}
 
 .section {
   padding-top: 120px;
