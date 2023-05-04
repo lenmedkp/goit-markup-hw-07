@@ -769,6 +769,7 @@ body {
   margin-bottom: 24px;
   color: #8e8f99;
 }
+
 .modal-form-input:focus {
   outline: none;
   border-color: #4d5ae5;
