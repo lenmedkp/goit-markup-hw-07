@@ -15,7 +15,9 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/mobile.css" />
+    <link rel="stylesheet" href="./css/tablet.css" />
+    <link rel="stylesheet" href="./css/desktop.css" />
   </head>
   <body>
     <header class="page-header">
@@ -38,7 +40,7 @@
             </li>
           </ul>
         </nav>
-        <button type="button" class="mobile-menu-open">
+        <button type="button" class="mobile-menu-open js-open-menu">
           <svg class="mobile-menu-open-icon" width="32" height="22">
             <use href="./images/sprite-burger-icon.svg#burger-icon"></use>
           </svg>
@@ -57,6 +59,75 @@
             </li>
           </ul>
         </address>
+      </div>
+      <div class="mobile-menu js-menu-container">
+        <div class="container mobile-menu-container">
+          <button type="button" class="mobile-menu-close-btn js-close-menu">
+            <svg class="mobile-menu-close-icon" width="8" height="8">
+              <use href="./images/sprite-close-black.svg#close-black"></use>
+            </svg>
+          </button>
+          <ul class="nav-mobile list">
+            <li class="nav-mobile-item">
+              <a class="nav-mobile-link link" href="./index.html">Studio</a>
+            </li>
+            <li class="nav-mobile-item">
+              <a class="nav-mobile-link link" href="/portfolio.html"
+                >Portfolio</a
+              >
+            </li>
+            <li class="nav-mobile-item">
+              <a class="nav-mobile-link link" href="">Contacts</a>
+            </li>
+          </ul>
+          <div class="mobile-menu-wrapper">
+            <ul class="contacts-menu-list list">
+              <li class="contacts-mobile-item">
+                <a
+                  class="contacts-mobile-link contacts-phone-link link"
+                  href="tel:+110001111111"
+                  >+11(000)111-11-11</a
+                >
+              </li>
+              <li class="contacts-mobile-item">
+                <a
+                  class="contacts-mobile-link link"
+                  href="mailto:info@devstudio.com"
+                ></a>
+              </li>
+            </ul>
+            <ul class="social-mobile-list list">
+              <li class="social-mobile-list-item">
+                <a class="social-mobile-list-link" href="#">
+                  <svg class="social-mobile-list-icon" width="24" height="24">
+                    <use href="./images/sprite.svg#instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-mobile-list-item">
+                <a class="social-mobile-list-link" href="#">
+                  <svg class="social-mobile-list-icon" width="24" height="24">
+                    <use href="./images/sprite.svg#twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-mobile-list-item">
+                <a class="social-mobile-list-link" href="#">
+                  <svg class="social-mobile-list-icon" width="24" height="24">
+                    <use href="./images/sprite.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-mobile-list-item">
+                <a class="social-mobile-list-link" href="#">
+                  <svg class="social-mobile-list-icon" width="24" height="24">
+                    <use href="./images/sprite.svg#linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
     <main>
@@ -446,7 +517,7 @@
         </div>
       </div>
     </footer> -->
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <!-- <!-- <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close-btn" data-modal-close>
           <svg class="modal-close-btn-icon" width="8" height="8">
@@ -529,7 +600,8 @@
           <button type="submit" class="modal-form-submit">Send</button>
         </form>
       </div>
-    </div>
-    <script src="./js/modal.js"></script> -->
+    </div> -->
+    <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
