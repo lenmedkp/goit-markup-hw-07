@@ -1,21 +1,211 @@
+@media screen and (max-width: 1157px) {
+  .employees-section {
+    display: none;
+  }
+
+  /* .section-item-link {
+    display: none;
+  } */
+}
+
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
-  }
-}
-
-@media screen and (max-width: 1158px) {
-  .site-nav {
-    display: flex;
-    align-items: center;
+    max-width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .menu-list {
     display: flex;
+    flex-direction: column;
+  }
+
+  .mobile-menu-open {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: none;
+  }
+
+  .section-item-link {
+    display: none;
+  }
+  .page-header {
+    padding: 0;
+  }
+
+  .page-nav {
+    display: flex;
     align-items: center;
   }
 
-  .page-header {
-    padding-bottom: 24px;
+  .site-nav {
+    display: flex;
+    align-items: center;
+    margin-left: 120px;
+  }
+
+  /* .site-nav-item:not(:first-child) {
+    margin-left: 40px;
+  } */
+
+  .site-nav-link {
+    color: var(--text-color);
+    font-weight: 500;
+    transition: color var(--transition-duration-and-func);
+  }
+
+  .site-nav-link:hover,
+  .site-nav-link:focus {
+    color: var(--accent-color);
+  }
+
+  .menu-contacts {
+    font-family: var(--primary-font);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--text-color);
+  }
+
+  .site-nav-studio {
+    display: block;
+    position: relative;
+    transition: background-color var(--transition-duration-and-func);
+  }
+
+  .site-nav-studio::after {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 48px;
+    height: 4px;
+    background-color: #404bbf;
+    margin-top: 24px;
+  }
+
+  .site-nav-studio:hover,
+  .site-nav-studio:focus {
+    color: var(--accent-color);
+  }
+
+  .site-nav-portfolio {
+    display: block;
+    position: relative;
+    color: currentColor;
+    transition: background-color var(--transition-duration-and-func);
+  }
+
+  .site-nav-portfolio::after {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 66px;
+    height: 4px;
+    background-color: #404bbf;
+    margin-top: 24px;
+  }
+
+  /* .menu-item:first-child {
+    margin-bottom: 12px;
+  } */
+
+  .contacts .link {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    margin-left: 122px;
+    color: #434455;
+    transition: color var(--transition-duration-and-func);
+  }
+
+  .contacts .link:hover,
+  .contacts .link:focus {
+    color: var(--accent-color);
+  }
+
+  .page-header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .site-nav-contacts {
+    display: block;
+    position: relative;
+    color: currentColor;
+    transition: background-color var(--transition-duration-and-func);
+  }
+
+  .site-nav-contacts::after {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 67px;
+    height: 4px;
+    background-color: #404bbf;
+    margin-top: 24px;
+  }
+
+  .contacts {
+    transition: color var(--transition-duration-and-func);
+  }
+
+  .site-nav-item:not(:last-child) {
+    margin-right: 40px;
+  }
+
+  .site-nav .link {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--text-color);
+  }
+
+  .site-nav .link:hover,
+  .site-nav .link:focus {
+    color: var(--accent-color);
+  }
+
+  .menu-list .link {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+  }
+
+  .menu-list .link:hover,
+  .menu-list .link:focus {
+    color: var(--accent-color);
+  }
+
+  .list-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    margin-bottom: 8px;
+    color: var(--text-color);
+  }
+
+  .list-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    width: 264px;
+    color: #434455;
+    margin-bottom: 8px;
   }
 }

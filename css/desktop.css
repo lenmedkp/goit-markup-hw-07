@@ -19,3 +19,133 @@
     padding-bottom: 24px;
   }
 }
+/* .page-nav {
+  display: flex;
+  align-items: center;
+} */
+
+/* .site-nav-link:hover,
+  .site-nav-link:focus {
+    color: var(--accent-color);
+  }
+
+  .site-nav-studio:hover,
+  .site-nav-studio:focus {
+    color: var(--accent-color);
+  } */
+
+/* .site-nav-link {
+  transition: color var(--transition-duration-and-func);
+} */
+
+/* .site-nav-studio {
+  display: block;
+  position: relative;
+  transition: background-color var(--transition-duration-and-func);
+} */
+
+/* .site-nav-studio::after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 48px;
+  height: 4px;
+  background-color: #404bbf;
+  margin-top: 24px;
+} */
+
+/* .site-nav-portfolio {
+  display: block;
+  position: relative;
+  color: currentColor;
+  transition: background-color var(--transition-duration-and-func);
+} */
+
+/* .site-nav-portfolio::after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 66px;
+  height: 4px;
+  background-color: #404bbf;
+  margin-top: 24px;
+} */
+
+/* .site-nav-contacts {
+  display: block;
+  position: relative;
+  color: currentColor;
+  transition: background-color var(--transition-duration-and-func);
+} */
+
+/* .site-nav-contacts::after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 67px;
+  height: 4px;
+  background-color: #404bbf;
+  margin-top: 24px;
+} */
+
+/* .contacts {
+  transition: color var(--transition-duration-and-func);
+} */
+
+/* .site-nav-item:not(:last-child) {
+  margin-right: 40px;
+} */
+
+/* .site-nav .link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--text-color);
+} */
+
+/* .site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+} */
+
+/* .menu-list .link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+} */
+
+/* .menu-list .link:hover,
+.menu-list .link:focus {
+  color: var(--accent-color);
+} */
+
+/* .list-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  margin-bottom: 8px;
+  color: var(--text-color);
+} */
+
+/* .list-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  width: 264px;
+  color: #434455;
+  margin-bottom: 8px;
+} */
+
+/* .menu-contacts {
+  font-style: normal;
+  margin-left: auto;
+} */
+
+/* .menu-item-phone {
+  margin-left: 40px;
+} */
