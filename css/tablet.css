@@ -77,6 +77,9 @@
   }
 
   .menu-contacts {
+    /* display: flex;
+    align-items: center; */
+
     font-family: var(--primary-font);
     font-style: normal;
     font-weight: 500;

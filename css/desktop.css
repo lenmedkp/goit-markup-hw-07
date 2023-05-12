@@ -12,6 +12,11 @@
     margin-left: 76px;
   }
 
+  .contacts-wrapper {
+    display: flex;
+    align-items: center;
+  }
+
   .menu-contacts {
     margin-left: 332px;
     font-style: normal;
