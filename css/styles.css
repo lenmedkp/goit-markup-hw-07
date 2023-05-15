@@ -213,18 +213,6 @@ ol {
   color: var(--pressed-state-color);
 }
 
-/* .current::after {
-  display: block;
-  content: "";
-  position: absolute;
-  bottom: -1px;
-  left: 0;
-  width: 48px;
-  height: 4px;
-  border-radius: 2px;
-  background-color: var(--pressed-state-color);
-} */
-
 .site-nav-studio {
   display: block;
   position: relative;
@@ -1258,6 +1246,31 @@ ol {
   transform: translateX(0);
 }
 
+.nav-mobile-link {
+  font-family: var(--primary-font);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--dark-color);
+}
+
+.mobile-current {
+  width: 109px;
+  height: 40px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #404bbf;
+  margin-bottom: 40px;
+}
+
 .mobile-menu-container.mobile-menu-open {
   position: absolute;
   top: 24px;
@@ -1342,4 +1355,20 @@ ol {
   visibility: visible;
   pointer-events: auto;
   transform: translateX(0);
+}
+
+.mobile-menu-close {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  padding: 0;
+  background-color: var(--accent-color);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  transition: background-color var(--transition-duration-and-func);
 }
