@@ -126,7 +126,7 @@ ol {
   color: var(--dark-color);
 }
 
-.logo {
+.logo-header {
   font-family: var(--secondary-font);
   font-weight: 800;
   font-size: 18px;
@@ -179,7 +179,7 @@ ol {
 }
 
 @media only screen and (min-width: 1158px) {
-  .logo {
+  .logo-header {
     margin-right: 76px;
   }
 }
@@ -739,7 +739,7 @@ ol {
     margin-right: auto;
   }
 
-  .footer-logo {
+  .logo-footer {
     text-align: start;
   }
 }
@@ -768,12 +768,22 @@ ol {
   }
 }
 
-.footer-logo {
+.logo-footer {
   display: block;
   text-align: center;
+  font-family: var(--secondary-font);
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  align-items: center;
+  margin-right: auto;
+  margin-bottom: 16px;
+  color: var(--primary-brand-color);
 }
 
-.footer-section.logo {
+.footer-section.logo-footer {
   display: block;
   padding-top: 0;
   padding-bottom: 0;
@@ -806,7 +816,7 @@ ol {
     text-align: start;
   }
 
-  .footer-logo {
+  .logo-footer {
     text-align: start;
   }
 
