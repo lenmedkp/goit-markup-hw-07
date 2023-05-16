@@ -930,3 +930,27 @@ body {
   fill: #ffffff;
   transition: fill var(--transition-duration-and-func);
 }
+
+
+.privacy-policy {
+  font-family: var(--primary-font);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.04em;
+  margin-top: 16px;
+  margin-bottom: 24px;
+  color: var(--primary-brand-color);
+}
+
+.modal-form-check-desc {
+  display: flex;
+  align-items: center;
+  font-family: var(--primary-font);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  margin-top: 16px;
+  margin-bottom: 24px;
+  color: var(--subtitle-text-color);
+}

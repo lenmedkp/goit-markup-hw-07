@@ -134,6 +134,8 @@ ol {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   align-items: center;
+  padding: 24px 0;
+  margin-right: auto;
   color: var(--primary-brand-color);
 }
 
@@ -174,11 +176,6 @@ ol {
 .container-header {
   display: flex;
   align-items: center;
-}
-
-.logo {
-  padding: 24px 0;
-  margin-right: auto;
 }
 
 @media only screen and (min-width: 1158px) {
@@ -306,7 +303,7 @@ ol {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
-  color: var(--dark-color);
+  color: var(--text-color);
 }
 
 .address.link {
@@ -342,6 +339,14 @@ ol {
   }
 }
 
+@media only screen and (min-width: 1158px) {
+  .contact-list-item {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+  }
+}
+
 .hero-section {
   max-width: 1440px;
   margin-left: auto;
@@ -358,12 +363,12 @@ ol {
   display: block;
   font-family: var(--primary-font);
   font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
   text-align: center;
   align-items: center;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.02em;
   max-width: 320px;
   margin-left: auto;
   margin-right: auto;
@@ -681,7 +686,8 @@ ol {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 16px;
+  column-gap: 16px;
+  row-gap: 72px;
 }
 
 .customer-item {
@@ -733,7 +739,7 @@ ol {
     margin-right: auto;
   }
 
-  .logo-footer {
+  .footer-logo {
     text-align: start;
   }
 }
@@ -749,6 +755,11 @@ ol {
     max-width: 552px;
     padding: 0;
   }
+
+  .customer-list {
+    row-gap: 72px;
+  }
+
   .footer-container {
     width: 584px;
     flex-wrap: wrap;
@@ -757,8 +768,9 @@ ol {
   }
 }
 
-.logo-footer {
+.footer-logo {
   margin-bottom: 16px;
+  text-align: center;
 }
 
 .footer-section.logo {
@@ -768,6 +780,7 @@ ol {
   margin-bottom: 16px;
   text-align: center;
 }
+
 .footer-text {
   display: block;
   width: 264px;
@@ -793,17 +806,20 @@ ol {
     text-align: start;
   }
 
+  .footer-logo {
+    text-align: start;
+  }
+
   .footer.logo {
     text-align: start;
   }
-}
-
-@media only screen and (min-width: 1158px) {
   .footer-container {
     align-items: baseline;
-    gap: 0;
+    gap: 24px;
   }
-  .footer-logo-section {
+}
+@media only screen and (min-width: 1158px) {
+  .footer-logo-wrapper {
     margin-right: 120px;
   }
 }
@@ -843,7 +859,13 @@ ol {
   letter-spacing: 0.02em;
   color: var(--white-color);
   margin-bottom: 16px;
-  text-align: start;
+  text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .footer-social-descr {
+    text-align: start;
+  }
 }
 
 @media only screen and (min-width: 1158px) {
@@ -897,7 +919,6 @@ ol {
   height: 40px;
   color: var(--white-color);
   background-color: var(--primary-brand-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   transition: background-color var(--transition-duration-and-func);
 }
@@ -1030,6 +1051,7 @@ ol {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--dark-color);
+  margin-bottom: 16px;
 }
 
 .modal-form-input-desc {
@@ -1061,8 +1083,6 @@ ol {
   top: 50%;
   left: 16px;
   transform: translateY(-50%);
-  width: 18px;
-  height: 18px;
   fill: var(--dark-color);
   transition: fill var(--transition-duration-and-func);
 }
@@ -1120,6 +1140,17 @@ ol {
   margin-top: 16px;
   margin-bottom: 24px;
   color: var(--subtitle-text-color);
+}
+
+.modal-form-check-desc.privacy-policy {
+  font-family: var(--primary-font);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.04em;
+  margin-top: 16px;
+  margin-bottom: 24px;
+  color: var(--primary-brand-color);
 }
 
 .modal-form-input:focus {
