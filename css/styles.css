@@ -93,7 +93,6 @@ ol {
   letter-spacing: 0.04em;
   line-height: 1.5;
   border-radius: 4px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   color: var(--light-color);
   background-color: var(--primary-brand-color);
   cursor: pointer;
@@ -216,17 +215,36 @@ ol {
 .site-nav-studio {
   display: block;
   position: relative;
+  font-family: var(--primary-font);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--pressed-state-color);
   transition: background-color var(--transition-duration-and-func);
 }
-
+.site-nav-item {
+  display: block;
+  position: relative;
+  font-family: var(--primary-font);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--pressed-state-color);
+  transition: background-color var(--transition-duration-and-func);
+  color: var(--dark-color);
+}
 .site-nav-studio::after {
   position: absolute;
   display: block;
   content: "";
   width: 48px;
   height: 4px;
-  background-color: #404bbf;
-  margin-top: 24px;
+  background-color: var(--pressed-state-color);
+  margin-top: 20px;
 }
 
 .site-nav-portfolio {
@@ -242,8 +260,8 @@ ol {
   content: "";
   width: 66px;
   height: 4px;
-  background-color: #404bbf;
-  margin-top: 24px;
+  background-color: var(--pressed-state-color);
+  margin-top: 20px;
 }
 
 .site-nav-contacts {
@@ -279,6 +297,16 @@ ol {
 
 .contact-list {
   display: flex;
+}
+
+.contact-list-item {
+  font-family: var(--primary-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: var(--dark-color);
 }
 
 .address.link {
@@ -328,11 +356,14 @@ ol {
 
 .hero-title {
   display: block;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.11;
+  font-family: var(--primary-font);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
   text-align: center;
-  letter-spacing: 0.02em;
+  align-items: center;
+  letter-spacing: 0.04em;
   max-width: 320px;
   margin-left: auto;
   margin-right: auto;
@@ -663,7 +694,6 @@ ol {
   justify-content: center;
   align-items: center;
   height: 100%;
-  padding: 16px 32px;
   color: var(--subtitle-text-color);
   border: 1px solid var(--subtitle-text-color);
   border-radius: 4px;
@@ -729,7 +759,6 @@ ol {
 
 .logo-footer {
   margin-bottom: 16px;
-  text-align: center;
 }
 
 .footer-section.logo {
@@ -806,7 +835,13 @@ ol {
 }
 
 .footer-social-descr {
-  color: var(--light-color);
+  font-family: var(--primary-font);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--white-color);
   margin-bottom: 16px;
   text-align: start;
 }
@@ -909,37 +944,6 @@ ol {
     transform: translate(-50%, 0);
   }
 }
-
-/* .modal-close-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 24px;
-  height: 24px;
-  margin-left: auto;
-  margin-bottom: 24px;
-  cursor: pointer;
-  background-color: var(--accent-color);
-  border-radius: 50%;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  transition: background-color border var(--transition-duration-and-func);
-} */
-
-/* .modal-close-btn:hover,
-.modal-close-btn:focus {
-  background-color: var(--pressed-state-color);
-  border: 1px solid transparent;
-} */
-
-/* .modal-close-btn-icon {
-  fill: var(--dark-color);
-  transition: fill var(--transition-duration-and-func);
-} */
-
-/* .modal-close-btn:hover.modal-close-btn-icon,
-.modal-close-btn:focus.modal-close-btn-icon {
-  fill: var(--white-color);
-} */
 
 @media screen and (orientation: landscape) {
   .backdrop {
