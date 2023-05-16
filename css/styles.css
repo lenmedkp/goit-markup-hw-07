@@ -769,7 +769,7 @@ ol {
 }
 
 .footer-logo {
-  margin-bottom: 16px;
+  display: block;
   text-align: center;
 }
 
@@ -810,14 +810,12 @@ ol {
     text-align: start;
   }
 
-  .footer.logo {
-    text-align: start;
-  }
   .footer-container {
     align-items: baseline;
     gap: 24px;
   }
 }
+
 @media only screen and (min-width: 1158px) {
   .footer-logo-wrapper {
     margin-right: 120px;
