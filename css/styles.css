@@ -92,10 +92,15 @@ ol {
   font-weight: 500;
   letter-spacing: 0.04em;
   line-height: 1.5;
-  border-radius: 4px;
   color: var(--light-color);
   background-color: var(--primary-brand-color);
+  border: none;
   cursor: pointer;
+}
+
+.button:hover,
+.button:focus {
+  background-color: var(--pressed-state-color);
 }
 
 .hero-container {
@@ -189,27 +194,11 @@ ol {
   gap: 40px;
 }
 
-.site-nav.link {
-  display: block;
-  position: relative;
-  padding-top: 24px;
-  padding-bottom: 24px;
-  font-weight: 500;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  transition: color var(--transition-duration-and-func);
-}
-
-.site-nav.link:hover,
-.link:focus {
-  color: var(--pressed-state-color);
-}
-
 .current {
   color: var(--pressed-state-color);
 }
 
-.site-nav-studio {
+.site-nav.link {
   display: block;
   position: relative;
   font-family: var(--primary-font);
@@ -218,9 +207,12 @@ ol {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: var(--pressed-state-color);
-  transition: background-color var(--transition-duration-and-func);
+  transition: color var(--transition-duration-and-func);
+  color: var(--dark-color);
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
+
 .site-nav-item {
   display: block;
   position: relative;
@@ -230,10 +222,25 @@ ol {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: var(--pressed-state-color);
-  transition: background-color var(--transition-duration-and-func);
+  transition: color var(--transition-duration-and-func);
   color: var(--dark-color);
+  padding-top: 23px;
+  padding-bottom: 23px;
 }
+
+.site-nav-studio {
+  display: block;
+  position: relative;
+  transition: background-color var(--transition-duration-and-func);
+}
+
+.site-nav-portfolio {
+  display: block;
+  position: relative;
+  color: currentColor;
+  transition: background-color var(--transition-duration-and-func);
+}
+
 .site-nav-studio::after {
   position: absolute;
   display: block;
@@ -244,13 +251,6 @@ ol {
   margin-top: 20px;
 }
 
-.site-nav-portfolio {
-  display: block;
-  position: relative;
-  color: currentColor;
-  transition: background-color var(--transition-duration-and-func);
-}
-
 .site-nav-portfolio::after {
   position: absolute;
   display: block;
@@ -259,6 +259,15 @@ ol {
   height: 4px;
   background-color: var(--pressed-state-color);
   margin-top: 20px;
+}
+
+.site-nav.link:hover,
+.site-nav.link:focus {
+  color: var(--pressed-state-color);
+}
+
+.current {
+  color: var(--pressed-state-color);
 }
 
 .site-nav-contacts {
@@ -274,7 +283,7 @@ ol {
   content: "";
   width: 67px;
   height: 4px;
-  background-color: #404bbf;
+  background-color: var(--pressed-state-color);
   margin-top: 24px;
 }
 
@@ -306,7 +315,8 @@ ol {
   color: var(--text-color);
 }
 
-.address.link {
+.contact-list.link {
+  font-family: var(--primary-font);
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -315,7 +325,7 @@ ol {
   transition: color var(--transition-duration-and-func);
 }
 
-.address.link:hover,
+.contact-list.link:hover,
 .link:focus {
   color: var(--pressed-state-color);
 }
@@ -332,15 +342,35 @@ ol {
     gap: 40px;
   }
 
-  .address.link {
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
+  .contact-list-item {
+    font-family: var(--primary-font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: var(--text-color);
+    transition: color var(--transition-duration-and-func);
+  }
+
+  .contact-list.link {
+    font-family: var(--primary-font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    transition: color var(--transition-duration-and-func);
   }
 }
 
 @media only screen and (min-width: 1158px) {
   .contact-list-item {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+  }
+  .contact-list.link {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -382,15 +412,9 @@ ol {
   height: 56px;
   margin-left: auto;
   margin-right: auto;
-  border: none;
   color: var(--white-color);
   background-color: var(--primary-brand-color);
   transition: background-color var(--transition-duration-and-func);
-}
-
-.hero-section.button:hover,
-.button:focus {
-  background-color: var(--pressed-state-color);
 }
 
 @media only screen and (max-width: 428px) {
@@ -734,7 +758,6 @@ ol {
     display: flex;
     flex-direction: row;
     align-items: center;
-    row-gap: 72px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -752,8 +775,7 @@ ol {
 
 @media only screen and (min-width: 768px) and (max-width: 1157px) {
   .customer-container {
-    max-width: 552px;
-    padding: 0;
+    max-width: 584px;
   }
 
   .customer-list {
@@ -763,8 +785,9 @@ ol {
   .footer-container {
     width: 584px;
     flex-wrap: wrap;
-    gap: 24px;
-    row-gap: 72px;
+  }
+  .footer-social-wrapper {
+    margin-left: 24px;
   }
 }
 
@@ -822,7 +845,6 @@ ol {
 
   .footer-container {
     align-items: baseline;
-    gap: 24px;
   }
 }
 
@@ -927,17 +949,11 @@ ol {
   height: 40px;
   color: var(--white-color);
   background-color: var(--primary-brand-color);
-  border-radius: 4px;
   transition: background-color var(--transition-duration-and-func);
 }
 
 .subscribe-icon {
   fill: #ffffff;
-}
-
-.subscribe-btn:hover,
-.subscribe-btn:focus {
-  background-color: var(--success-color);
 }
 
 @media only screen and (min-width: 768px) {
@@ -1004,7 +1020,8 @@ ol {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  width: 408px;
+  width: 100%;
+  max-width: 408px;
   height: 584px;
   background-color: var(--modal-background-color);
   border-radius: 4px;
@@ -1049,8 +1066,6 @@ ol {
 }
 
 .modal-form-title {
-  min-width: 360px;
-  height: 24px;
   font-family: var(--primary-font);
   font-style: normal;
   font-weight: 500;
@@ -1191,7 +1206,7 @@ ol {
   content: "";
   cursor: pointer;
   margin-right: 8px;
-  opacity: 0.1;
+  opacity: 0.2;
 }
 
 .modal-form-check:checked + .modal-form-check-desc .modal-form-fake-checkbox {
@@ -1217,8 +1232,6 @@ ol {
   padding: 16px 32px;
   text-align: center;
   background-color: var(--primary-brand-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
   margin-left: auto;
   margin-right: auto;
   transition: background-color var(--transition-duration-and-func);
@@ -1228,6 +1241,15 @@ ol {
 .modal-form-submit:focus {
   color: var(--white-color);
   background-color: var(--pressed-state-color);
+}
+
+.privacy-policy {
+  font-family: var(--primary-font);
+  font-weight: 400;
+  font-size: 12;
+  line-height: 1.33;
+  letter-spacing: 0.04em;
+  color: var(--primary-brand-color);
 }
 
 .mobile-menu-container {
@@ -1294,14 +1316,12 @@ ol {
   align-items: center;
   position: absolute;
   top: 24px;
-  left: 380px;
   right: 24px;
-  width: 24px;
-  height: 24px;
   border-radius: 50%;
   padding: 0;
   background-color: var(--accent-color);
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: var(--dark-color);
+  /* border: 1px solid rgba(0, 0, 0, 0.1); */
   transition: background-color var(--transition-duration-and-func);
 }
 
@@ -1315,6 +1335,21 @@ ol {
   text-transform: capitalize;
   color: var(--dark-color);
   margin-bottom: 40px;
+}
+
+.mobile-nav-contacts {
+  margin-bottom: 0;
+}
+
+.mobile-nav-link {
+  font-family: var(--primary-font);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--dark-color);
 }
 
 .mobile-current {
