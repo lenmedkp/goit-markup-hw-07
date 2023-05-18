@@ -77,9 +77,9 @@ body {
   align-items: center;
 }
 
-.site-nav-link {
+/* .site-nav-link {
   transition: color var(--transition-duration-and-func);
-}
+} */
 
 .site-nav-studio {
   display: block;
@@ -113,7 +113,11 @@ body {
   background-color: #404bbf;
   margin-top: 22px;
 }
-
+/* 
+.site-nav.link:hover,
+.site-nav.link:focus {
+  color: var(--pressed-state-color);
+} */
 .site-nav-contacts {
   display: block;
   position: relative;
